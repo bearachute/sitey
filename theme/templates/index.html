@@ -10,6 +10,7 @@
 <h2><a href="/{{ article.slug }}.html">{{ article.title }}</a></h2>
 <label>Posted on <strong>{{ article.date }}</strong></label>
 {{ article.content|truncate(110) }}
+{{ tag }} | {{ author }}
 {% else %}
 No posts yet, brah.
 {% endfor %}
